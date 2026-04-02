@@ -19,4 +19,8 @@ void main()
         fact*=i;
     }   
     printf("factorial is %d", fact);
+    
+    int fact1 = factorialz(a);
+
+    printf("Factorial is %d\n", fact1);
 }
