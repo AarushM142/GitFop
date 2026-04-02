@@ -1,15 +1,15 @@
 #include <stdio.h>
 
-int main() // Using int main() is the standard
+int main() 
 {
     int len, i;
-    int cnt1 = 0, cnt2 = 0; // Initialize counters to 0
+    int cnt1 = 0, cnt2 = 0;
 
     printf("Enter size of the length: ");
     scanf("%d", &len);
 
     int main_array[len];
-    int even_array[len]; // Pre-allocate max possible size
+    int even_array[len]; 
     int odd_array[len];
 
     printf("Enter elements of the main array: ");
@@ -21,18 +21,18 @@ int main() // Using int main() is the standard
     for(i = 0; i < len; i++) {
         if(main_array[i] % 2 == 0) 
         {
-            even_array[cnt1] = main_array[i]; // Use cnt1 as the index
+            even_array[cnt1] = main_array[i];
             cnt1++;
         } 
         else 
         {
-            odd_array[cnt2] = main_array[i]; // Use cnt2 as the index
+            odd_array[cnt2] = main_array[i];
             cnt2++;
         }
     }
 
     printf("The array of even numbers is: ");
-    for(i = 0; i < cnt1; i++) // 3. Only loop up to the count found
+    for(i = 0; i < cnt1; i++)
         printf("%d ", even_array[i]);
 
     printf("\nThe array of odd numbers is: ");
