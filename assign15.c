@@ -1,11 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 void main()
 {
-    int seed;
-    printf("Enter a seed number : ");
-    scanf("%d",&seed);
-    srand(seed);
+    srand(time(0));
     printf("The random number generated is %d\n",rand());
 }
