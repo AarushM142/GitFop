@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void main() {
+int main() {
     FILE *sourceFile, *destFile;
     char *buffer;
     long fileSize;
 
 
-    sourceFile = fopen("assign7.c", "rb"); // Open source file in read-binary mode
+    sourceFile = fopen("assign77.c", "rb"); // Open source file in read-binary mode
     destFile = fopen("assign21End.c", "wb"); //opens destination file in write binary mode, ie. edit mode
     
     
